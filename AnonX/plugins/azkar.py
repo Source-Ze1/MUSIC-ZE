@@ -12,13 +12,13 @@ chat = []
 
 @app.on_message(filters.group, group = 768)
 async def azkarr(c, msg):
-  if msg.text == "تفعيل الاذكار":
+  if msg.text == "فعل الاذكار":
     if msg.chat.id in chat:
       return await msg.reply_text("- الاذكار متقعله اصلا يسطا")
     else:
       chat.append(msg.chat.id)
       return await msg.reply_text("تم تفعيل الاذكار")
-  elif msg.text == "تعطيل الاذكار":
+  elif msg.text == "عطل الاذكار":
     if msg.chat.id in chat:
       chat.remove(msg.chat.id)
       return await msg.reply_text("تم تعطيل الاذكار")
