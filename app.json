@@ -14,7 +14,7 @@
     "env": {
       "API_ID": {
         "description": "ماتبعصش القيمه",
-        "value": "",
+        "value": "21627756",
         "required": true
       },
      "CHANNEL_ID": {
@@ -34,7 +34,7 @@
       },
       "API_HASH": {
         "description": "خلي القيمه زي ماهي",
-        "value": "",
+        "value": "fe77fbf0cae9f7f5ece37659e2466cf1",
         "required": true
       },
       "SUPPORT_CHANNEL": {
@@ -49,7 +49,7 @@
       },
       "MONGO_DB_URI": {
         "description": "مونقو دي بي لو ماتعرفش تطلعه خليه مثل ماهو",
-        "value": "mongodb+srv://islam2005:islam2005@cluster0.rdjot.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "value": "",
         "required": true
       },
       "MUSIC_BOT_NAME": {
@@ -59,7 +59,7 @@
       },
       "OWNER_ID": {
         "description": "ايديك تقدر تحط اكثر من ايدي بس مسافه بين كل ايدي",
-        "value": "",
+        "value": "6509622797",
         "required": true
       },
       "STRING_SESSION": {
@@ -69,7 +69,7 @@
       },
       "HEROKU_API_KEY": {
         "description": "توكن الهيروكو",
-        "value": "",
+        "value": "eca8ec2f-2f77-4b84-ad3d-2769303f33c4",
         "required": false
       },
       "HEROKU_APP_NAME": {
