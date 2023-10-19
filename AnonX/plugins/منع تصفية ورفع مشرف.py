@@ -132,7 +132,6 @@ def promote_g_admin(client, message):
     	#else:
 #    		message.reply("يجب ان تكون مشرف لإستخدام الامر")
 
-app.run() 	 
 
 	 
 
