@@ -17,5 +17,4 @@ async def Italymusic(client, message):
         await message.reply(response, reply_markup=keyboard)
 
 print("OKAY ITALY MUSIC CODE WORKING NOW⚡")
-app.run()
 #✘ ITALY MUSIC @I6ALY ✘
