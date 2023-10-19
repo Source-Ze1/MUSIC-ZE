@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.enums import ChatMemberStatus
 
 
-@mody.on_message(filters.command(["المالك"],""))
+@app.on_message(filters.command(["المالك"],""))
 async def creator(c,msg):
     x = []
     async for m in mody.get_chat_members(msg.chat.id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
