@@ -1,12 +1,12 @@
 from AnonX import app 
-from strings.filters import command
+from AnonX import 
 from pyrogram import Client, filters
 from pyrogram import enums
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus , ChatType
 from pyrogram.types import ChatPermissions, ChatPrivileges
 import asyncio
 
-#by > @PROGRAMMER_TOM / @BENN_DEV
+#by > @PROGRAMMER_ToM / @BENN_DEV / @UP_UO 
 
 
 welcome_enabled = True
@@ -44,7 +44,7 @@ async def welcome(client, chat_member_updated):
 
 
 
-@app.on_message(filters.command("رفع مشرف", "") & filters.channel)
+@app.on_message(filters.command("رفع مشرف") & filters.channel)
 def promote_c_admin(client, message):
     if message.reply_to_message and message.reply_to_message.from_user:
         target = message.reply_to_message.from_user.id
@@ -67,7 +67,7 @@ def promote_c_admin(client, message):
             return
 
     
-    ToM= ChatPrivileges(
+    Mody= ChatPrivileges(
                     can_manage_chat=True,
                     can_delete_messages=True,
                     can_manage_video_chats=True,
@@ -81,13 +81,13 @@ def promote_c_admin(client, message):
                     is_anonymous=False
                 )
     chat_id = message.chat.id
-    client.promote_chat_member(chat_id, user_id, ToM)
+    client.promote_chat_member(chat_id, user_id, Mody)
     message.reply(f"تم رفع {user_id} ادمن بنجاح")
     
 
 
 
-@app.on_message(filters.command("رفع مشرف", "") & filters.group)
+@app.on_message(filters.command("رفع مشرف كامل") & filters.group)
 def promote_g_admin(client, message):
     if message.reply_to_message and message.reply_to_message.from_user:
         target = message.reply_to_message.from_user.id
@@ -109,9 +109,9 @@ def promote_g_admin(client, message):
             message.reply_text("لا يمكن العثور على المستخدم")
             return
 
-    tom_id = message.from_user.id
+    mody_id = message.from_user.id
     chat_id = message.chat.id
-    ToM= ChatPrivileges(
+    Mody= ChatPrivileges(
                     can_manage_chat=True,
                     can_delete_messages=True,
                     can_manage_video_chats=True,
@@ -125,13 +125,60 @@ def promote_g_admin(client, message):
                     is_anonymous=False
                 )
     tooom = client.get_chat_members(chat_id, filter=ChatMembersFilter.ADMINISTRATORS)
-    for tom in tooom:
-    	if tom.user.id == tom_id and (tom.status == enums.ChatMemberStatus.OWNER or tom.status == enums.ChatMemberStatus.ADMINISTRATOR):
-    		client.promote_chat_member(chat_id, user_id, ToM)
+    for mody in tooom:
+    	if mody.user.id == mody_id and (mody.status == enums.ChatMemberStatus.OWNER or mody.status == enums.ChatMemberStatus.ADMINISTRATOR):
+    		client.promote_chat_member(chat_id, user_id, Mody)
     		message.reply(f"تم رفع {user_id} ادمن بنجاح")
-    	#else:
-#    		message.reply("يجب ان تكون مشرف لإستخدام الامر")
+    	else:
+    		message.reply("يجب ان تكون مشرف لإستخدام الامر")
 
+	 
+
+
+@app.on_message(filters.command("رفع مشرف") & filters.group)
+def promote_g_admin(client, message):
+    if message.reply_to_message and message.reply_to_message.from_user:
+        target = message.reply_to_message.from_user.id
+        user_id = str(target)
+    elif message.reply_to_message is None:
+        target = message.text.split()[2]
+        user = app.get_users(target)
+        if user:
+            user_id = str(user.id)
+        else:
+            message.reply_text("لا يمكن العثور على المستخدم")
+            return
+    else:
+        target = message.text.split()[1].strip("@")
+        user = app.get_users(target)
+        if user:
+            user_id = str(user.id)
+        else:
+            message.reply_text("لا يمكن العثور على المستخدم")
+            return
+
+    mody_id = message.from_user.id
+    chat_id = message.chat.id
+    Mody= ChatPrivileges(
+                    can_manage_chat=True,
+                    can_delete_messages=True,
+                    can_manage_video_chats=True,
+                    can_restrict_members=False,
+                    can_promote_members=False,
+                    can_change_info=False,
+                    can_post_messages=False,
+                    can_edit_messages=False,
+                    can_invite_users=True,
+                    can_pin_messages=True,
+                    is_anonymous=False
+                )
+    tooom = client.get_chat_members(chat_id, filter=ChatMembersFilter.ADMINISTRATORS)
+    for mody in tooom:
+    	if mody.user.id == mody_id and (mody.status == enums.ChatMemberStatus.OWNER or mody.status == enums.ChatMemberStatus.ADMINISTRATOR):
+    		client.promote_chat_member(chat_id, user_id, Mody)
+    		message.reply(f"تم رفع {user_id} ادمن بنجاح")
+    	else:
+    		message.reply("يجب ان تكون مشرف لإستخدام الامر")
 
 	 
 
