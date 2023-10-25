@@ -67,7 +67,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/S1CXBOT?startgroup=true"
             )
         ],
     ]
@@ -130,7 +130,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/S1CXBOT?startgroup=true"
             )
         ],
     ]
@@ -160,7 +160,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/S1CXBOT?startgroup=true"
             )
         ],
     ]
@@ -187,7 +187,7 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/S1CXBOT?startgroup=true"
             )
         ],
     ]
@@ -335,7 +335,7 @@ def queue_markup(_, videoid, chat_id):
             ),
          ],[
             InlineKeyboardButton(
-                text="𖣂 𝒔𝒌𝒊𝒑 𖣂", callback_data=f"ADMIN Skip|{chat_id}"
+                text="𖣂 𝒔𝒌𝒊𝒑 𖣂(", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="𖣂 𝒔𝒕𝒐𝒑 𖣂", callback_data=f"ADMIN Stop|{chat_id}"
@@ -343,7 +343,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/S1CXBOT?startgroup=true"
             )
         ],
     ]
