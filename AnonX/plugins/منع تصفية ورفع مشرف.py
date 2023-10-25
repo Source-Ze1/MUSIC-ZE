@@ -1,5 +1,5 @@
 from AnonX import app 
-from AnonX import 
+from strings.filters import command 
 from pyrogram import Client, filters
 from pyrogram import enums
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus , ChatType
