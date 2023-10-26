@@ -18,7 +18,7 @@ from AnonX import app
 async def svksksa(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph//file/a6137caa707bdb1247d7c.jpg",
-        caption=f"""[خش احذف محدش هيمسك فيك يلا غور فداهية 😂❤](https://t.me/LC6BOT)""",
+        caption=f"""[خش احذف محدش هيمسك فيك يلا غور فداهية 😂❤](https://t.me/SIOFBOT)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
