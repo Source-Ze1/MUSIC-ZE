@@ -23,7 +23,7 @@ async def svksksa(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• اضـغـط لـدخول للـبوت", url=f"https://t.me/d_accubot")
+                        "• اضـغـط لـدخول للـبوت", url=f"https://t.me/SIOFBOT")
                 ]
            ]
         ),
