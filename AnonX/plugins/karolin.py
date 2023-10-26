@@ -98,7 +98,7 @@ async def kstr(client: Client, message: Message):
        reply_markup=reply_markup,
        )
        await message.reply_text(
-        f"""- **ابشر ياعيوني ارسلت للمطور بيخش القروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشات تشوف التحديثات** -› [• Source Mira •](t.me/UI_XB)""", disable_web_page_preview=True     
+        f"""- **ابشر ياعيوني ارسلت للمطور بيخش القروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشات تشوف التحديثات** -› [• Source Ze •](t.me/UI_XB)""", disable_web_page_preview=True     
     )
 
 
