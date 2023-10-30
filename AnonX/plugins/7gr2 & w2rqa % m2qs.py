@@ -1,4 +1,3 @@
-from pyrogram import Client, filters
 from random import choice
 from pyrogram.types import (
     InlineQueryResultArticle,
@@ -6,7 +5,8 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from AnonX import app
+from AnonXMusic import app
+from pyrogram import Client, filters
 
 
 game_state = {}
