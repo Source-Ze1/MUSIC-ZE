@@ -6,7 +6,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from AnonXMusic import app
+from AnonX import app
 
 
 game_state = {}
