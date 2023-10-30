@@ -13,21 +13,6 @@ from pyrogram.errors import PeerIdInvalid
 bot_id = app.bot_token.split(":")[0]
 
 # create a Redis client
-r = redis.Redis(
-    host="127.0.0.1",
-    port=6379,)
-
-
-Keyard = ReplyKeyboardMarkup(
-  [
-    [("《صنع بوت》"),("《حذف بوت》")],
-    [("《صنع جلسه》")],
-    [("《السورس》"),("《مطور السورس》")],
-    [("الغاء")]
-  ],
-  resize_keyboard=True
-)
-
 
 Keyboard = ReplyKeyboardMarkup(
   [
