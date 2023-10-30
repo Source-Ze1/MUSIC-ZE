@@ -5,7 +5,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from AnonXMusic import app
+from AnonX import app
 from pyrogram import Client, filters
 
 
